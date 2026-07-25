@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/portfolio",
+  "homepage": "https://github.com/naved-me/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^12.42.2",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },

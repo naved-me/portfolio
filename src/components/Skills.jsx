@@ -1,12 +1,16 @@
+import { motion } from "framer-motion";
 import { skills, certifications } from "../data";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 
 export default function Skills() {
   return (
     <section id="skills" className="px-6 py-28 max-w-5xl mx-auto">
-      <SectionHeading index="04" label="Skills & Certifications" />
+      <Reveal>
+        <SectionHeading index="04" label="Skills & Certifications" />
+      </Reveal>
       <div className="grid sm:grid-cols-2 gap-12">
-        <div className="space-y-8">
+        <Reveal delay={0.05} className="space-y-8">
           {Object.entries(skills).map(([group, items]) => (
             <div key={group}>
               <p className="font-mono text-xs text-signal tracking-wide mb-3">
@@ -14,18 +18,19 @@ export default function Skills() {
               </p>
               <div className="flex flex-wrap gap-2">
                 {items.map((s) => (
-                  <span
+                  <motion.span
                     key={s}
-                    className="text-sm text-paper-dim border border-line rounded-full px-3 py-1.5"
+                    whileHover={{ scale: 1.08, borderColor: "var(--color-signal)" }}
+                    className="text-sm text-paper-dim border border-line rounded-full px-3 py-1.5 inline-block"
                   >
                     {s}
-                  </span>
+                  </motion.span>
                 ))}
               </div>
             </div>
           ))}
-        </div>
-        <div>
+        </Reveal>
+        <Reveal delay={0.15}>
           <p className="font-mono text-xs text-amber tracking-wide mb-3">CERTIFICATIONS</p>
           <ul className="space-y-3">
             {certifications.map((c) => (
@@ -37,7 +42,7 @@ export default function Skills() {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
