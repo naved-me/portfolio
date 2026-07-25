@@ -1,5 +1,3 @@
-// ── Edit this file to update your site's content ──────────────────────────
-
 export const profile = {
   name: "Syed Naved Mehdi",
   role: "AI/ML Researcher",
@@ -19,7 +17,7 @@ shipped systems.`;
 
 export const journey = [
   {
-    year: "2026",
+    year: "2025",
     title: "Brain Tumour Classification using Transfer Learning — ICMINT 2025",
     place: "",
     detail:
@@ -76,7 +74,7 @@ export const projects = [
     detail:
       "A real-time computer vision pipeline tracking pupil movement to generate spatial heatmaps of user screen attention and engagement patterns.",
     stack: ["Python", "OpenCV", "MediaPipe"],
-    github: "", // TODO: add your repo link
+    github: "https://github.com/naved-me/gaze_heatmap",
     demo: "",
   },
   {
@@ -84,7 +82,7 @@ export const projects = [
     detail:
       "A multi-modal HCI system mapping MediaPipe hand-tracking gestures directly to OS-level DirectX hardware inputs for zero-latency execution, with state-machine logic and hysteresis buffering to prevent input spamming during real-time steering and navigation.",
     stack: ["Python", "MediaPipe", "ctypes"],
-    github: "", // TODO: add your repo link
+    github: "https://github.com/naved-me/hand-gesture",
     demo: "",
   },
   {
@@ -92,14 +90,6 @@ export const projects = [
     detail:
       "RAG-based legal assistant grounding LLM outputs in verified motor vehicle law. Patent application published by the Indian Patent Office.",
     stack: ["RAG", "LLMs", "FAISS/ChromaDB"],
-    github: "",
-    demo: "",
-  },
-  {
-    title: "Local RAG Pipeline",
-    detail:
-      "A retrieval-augmented generation system built to run locally end-to-end — indexing, retrieval, and generation without external API dependencies.",
-    stack: ["RAG", "LLMs", "Vector Search"],
     github: "",
     demo: "",
   },
