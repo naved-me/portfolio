@@ -1,8 +1,8 @@
 export const profile = {
   name: "Syed Naved Mehdi",
-  role: "AI/ML Researcher",
-  tagline: "Generative AI, computer vision, and applied ML research.",
-  location: "Chennai, India",
+  role: "AI/ML Engineer",
+  tagline: "Generative AI, Agentic AI, Computer vision, and Applied ML research.",
+  location: "Bangalore, India",
   email: "syednavedmehdi@gmail.com",
   github: "https://github.com/naved-me",
   linkedin: "https://linkedin.com/in/syednavedmehdi",
@@ -11,15 +11,15 @@ export const profile = {
 
 export const about = `M.Tech student in Computer Science & Engineering (AI & Machine Learning) at
 SRM Institute of Science and Technology, Chennai (SGPA 8.60), following a B.Tech in
-Artificial Intelligence from Sarala Birla University, Ranchi. Work centers on generative AI,
-computer vision, and applied ML research — moving between model design, evaluation, and
+Artificial Intelligence from Sarala Birla University, Ranchi. Work centers on Generative AI,
+Computer Vision, Agentic AI and Applied ML research — moving between model design, evaluation, and
 shipped systems.`;
 
 export const journey = [
   {
     year: "2025",
     title: "Brain Tumour Classification using Transfer Learning — ICMINT 2025",
-    place: "",
+    place: "Chennai",
     detail:
       "Co-authored research evaluating an MRI-based tumour detection system using a fine-tuned ResNet Transformer with ImageNet pretraining to address limited medical dataset constraints.",
   },
